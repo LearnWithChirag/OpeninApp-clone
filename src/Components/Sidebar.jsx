@@ -5,6 +5,8 @@ import transaction from '../Icons/transaction_icon.png';
 import schedules from '../Icons/schedule_icon.png';
 import users from '../Icons/user_icon.png';
 import settings from '../Icons/setting_icon.png';
+import search from '../Icons/search-icon.png' ;
+
 
 const Sidebar = () => {
   return (
@@ -12,11 +14,13 @@ const Sidebar = () => {
         <div className="sidebar">
 
         <div className="header-sidebar">
-            <h4>Board.</h4>
+            <h4 className='fullname'>Board.</h4>
+            <h4 className='shortname'>B.</h4>
         </div>
         <div className="content-sidebar">
             <span>
-            <img src={dashboard} alt="dashboard icon" />
+              
+            <img src={dashboard} alt="dashboard icon"  />
             <a href="/">Dashboard</a>
             </span>
 
@@ -39,6 +43,9 @@ const Sidebar = () => {
             <a href="/">Settings</a>
             </span>
 
+            <span className='search-icon'>
+            <img src={search} alt="search icon" />
+            </span>
         </div>
         </div>
 

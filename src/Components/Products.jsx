@@ -21,7 +21,7 @@ const Products = () => {
             </p>
         </div>  
         <div className="pie-chart">
-        <Chart options={addPie.options} series={addPie.series} type="donut" width="380" />
+        <Chart options={addPie.options} series={addPie.series} type="donut" height="200"/>
         </div>  
     </div>
   )

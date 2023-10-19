@@ -12,7 +12,8 @@ const Profile = () => {
 
   const [modal, setModal] = useState(false);
   const Modal =() =>{
-    setModal(!modal)
+    setModal(!modal);
+    
   }
 
   const [formData, setFormData] = useState({
@@ -21,6 +22,7 @@ const Profile = () => {
   const nextContainer =() =>{
     document.querySelector(".basic-container").style.display = "none";
     document.querySelector(".social-container").style.display = "flex";
+
   }
 
   const backContainer =() =>{
@@ -88,11 +90,11 @@ const Profile = () => {
       <div className="content">
 
         <label htmlFor="name">Enter Name*</label>
-        <input type="text" className='input__name' name="name" placeholder="Eg. Chirag Paliwal" />
+        <input type="text" className='input__name' name="name" placeholder="Eg. Chirag Paliwal" required/>
         <label htmlFor="email">Enter Email*</label>
-        <input type="email" className='input__email' name="email" placeholder="Eg. chirag@xyz.com" />
+        <input type="email" className='input__email' name="email" placeholder="Eg. chirag@xyz.com" required/>
         <label htmlFor="phone">Enter Phone*</label>
-        <input type="number" className='input__phone' name="phone" placeholder="Eg.706924XXXX" />
+        <input type="number" className='input__phone' name="phone" placeholder="Eg.706924XXXX" required/>
       </div>
       <div className="btn">
         <input type="button" className='input__' value="Next" onClick={nextContainer}/>
@@ -101,12 +103,12 @@ const Profile = () => {
     <div className="social-container">
       <div className="content">
         <p>Instagram Link <span>(Optional)</span></p>
-        <input type="text" className='input__insta' name="instagram" placeholder="Eg. ..instagram/username" /> 
+        <input type="text" className='input__insta' name="instagram" placeholder="Eg. ..instagram/username" required/> 
         <p>Youtube Link <span>(Optional)</span></p>
-        <input type="text" className='input__yt' name="youtube" placeholder="Eg. ..youtube/username"/>
+        <input type="text" className='input__yt' name="youtube" placeholder="Eg. ..youtube/username" required/>
       </div>
       <div className="btn">
-        <input type="button" value="Back" onClick={() => backContainer}/>
+        <input type="button" value="Back" onClick={backContainer}/>
         <input type="button" value="Done" onClick={profileAdd}/>
       </div>
     </div>

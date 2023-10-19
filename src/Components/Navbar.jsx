@@ -18,6 +18,7 @@ const Navbar = () => {
             </p>
             <i><img src={bell} alt=""  /></i>
             <i><img src={mask} alt=""  /></i>
+            
         </div>
     
     </div>

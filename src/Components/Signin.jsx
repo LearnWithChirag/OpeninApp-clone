@@ -20,10 +20,7 @@ const navigate = useNavigate()
     
     const onSubmitHandle = (e) => {
         e.preventDefault();
-        navigate('homepage')
-        // console.log('fghj')
-        // window.location('/homepage')
-
+        navigate('homepage');
     }
 
 
@@ -58,8 +55,8 @@ const navigate = useNavigate()
                 <button><img src={apple} alt="icon"/><p>Sign in with Apple</p></button>
                 </div>
             </div>
-            <div className="signin-form">
-                <form action='' method='POST'>
+            <div className="signin-form"> 
+                <form action='' method='POST' >
                     <label htmlFor="email">Email address</label>
                     <input type="email" name="email" placeholder='chirag@gmail.com' required="required" />
                     <label htmlFor="password">Password</label>

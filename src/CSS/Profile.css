@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    height: 20rem;
+    height: 17rem;
     padding: 1.5rem 2rem;
     margin-top: 2.5rem;
     border-radius: .5rem;
@@ -67,4 +67,22 @@
     font-size: 1rem;
     font-weight: 600;
     color: #858585;
+}
+
+@media (max-width: 68.75em){
+    .profile{
+       width: 80%;
+    }
+}
+
+@media (max-width: 37.5em){
+    .profile{
+        height: 15rem;
+    }
+}
+
+@media (max-width: 31.25em){
+    .profile{
+        width: 100%;
+     }
 }

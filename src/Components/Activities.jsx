@@ -40,7 +40,7 @@ const Activities = () => {
               options={addBar.options}
               series={addBar.series}
               type="bar"
-              width="850"
+              // width="850"
               height="250"
             />
         </div>

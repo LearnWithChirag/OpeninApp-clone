@@ -25,3 +25,9 @@
   gap: 2rem;
   display: flex;
 }
+
+@media (max-width : 59.375em){
+  .design{
+    gap: 1rem;
+  }
+}

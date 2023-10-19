@@ -12,7 +12,7 @@ const Stats = () => {
             <i><img src={revenue} alt="icon" /></i>
             <p>Total Revenues</p>
             <span>
-                <p>$2,129,430</p>
+                <p>$2,129</p>
                 <p>+2.5%</p>
             </span>
         </div>

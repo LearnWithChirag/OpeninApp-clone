@@ -1,9 +1,9 @@
 .products{
     width: 48%;
-    height: 20rem;
+    height: 17rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     padding: 1.5rem 2rem;
     margin-top: 2.5rem;
     border-radius: .5rem;
@@ -22,4 +22,22 @@
     font-size: .75rem;
     font-weight: 400;
     color: #858585;
+}
+
+@media (max-width: 68.75em){
+    .products{
+       width: 80%;
+    }
+}
+
+@media (max-width: 37.5em){
+    .products{
+        height: 15rem;
+    }
+}
+
+@media (max-width: 31.25em){
+    .products{
+        width: 100%;
+     }
 }

@@ -29,3 +29,24 @@
     border-radius: .5rem;
     padding: .5rem;
 }
+@media (max-width: 50em){
+    .content-navbar{
+        gap: 1rem;
+    }
+}
+@media (max-width: 40.625em){
+    
+    .search-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 31.25em){
+    .header-navbar{
+        font-size: 1rem;
+    }
+    .content-navbar{
+        /* gap: 1rem; */
+        width: .8rem;
+    }
+}
