@@ -1,0 +1,31 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+    width: 100%;
+    align-items: center;
+    /* background-color: yellow; */
+    padding: 1rem;
+}
+
+.header-navbar{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.content-navbar{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.search-bar{
+    border-radius: .5rem;
+}
+
+.search-bar input{
+    border: none;
+    width: 10rem;
+    border-radius: .5rem;
+    padding: .5rem;
+}

@@ -1,0 +1,25 @@
+.products{
+    width: 48%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+    margin-top: 2.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .5rem rgb(0, 0, 0, .4);
+    /* background-color: yellow; */
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.12rem;
+    font-weight: 700;
+}
+
+.header p:last-child{
+    font-size: .75rem;
+    font-weight: 400;
+    color: #858585;
+}

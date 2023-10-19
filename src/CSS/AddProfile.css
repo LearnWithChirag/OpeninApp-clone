@@ -1,0 +1,108 @@
+.add-profile-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 0 .2rem white;
+    border-radius: .5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+
+.overlay{
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(49, 49, 49, .8);
+}
+
+.header-add-profile{
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.header-add-profile p:last-child{
+    color: #999CA0;
+    cursor: pointer;
+}
+
+.title-add-profile{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.header-basic , .header-social {
+    padding: 1rem 5rem;
+    border-bottom: .2rem solid #3F84F8;
+    /* border-bottom: .2rem solid #D9D9D9; */
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.basic-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-container{
+    display: flex;
+    flex-direction: column;
+    display: none;
+} 
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+
+.content span{
+    color: #999CA0;
+}
+
+.content input{
+    padding: 1rem .75rem;
+    border-radius: .5rem;
+    border: none;
+    border: .1rem solid #F2F2F2;
+}
+
+.content input::placeholder{
+    font-size: 1rem;
+    color: #999CA0;
+}
+
+.btn{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: right;
+    gap: .7rem;
+}
+
+.btn input{
+    border-radius: .5rem;
+    border: none;
+    font-size: .875rem;
+    font-weight: 600;
+    padding: .8rem 1rem;
+    color: black;
+    cursor: pointer;
+}
+
+.btn input:last-child{
+    color: white;
+    background-color: #3E84F8;
+
+}
