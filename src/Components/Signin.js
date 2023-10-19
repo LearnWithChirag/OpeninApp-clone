@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import '../CSS/Signin.css';
@@ -9,16 +10,19 @@ import google from '../Icons/google.png';
 import apple from '../Icons/apple.png';
 
 const Signin = () => {
+const navigate = useNavigate()
     const { user , loginWithRedirect } = useAuth0();
     const redirectGoogle = (e) =>{
         console.log("current user", user);
         loginWithRedirect();
-        window.location='/homepage'
+        navigate('/homepage')
     }
     
     const onSubmitHandle = (e) => {
         e.preventDefault();
-        window.location='/homepage';
+        navigate('homepage')
+        // console.log('fghj')
+        // window.location('/homepage')
 
     }
 
@@ -62,7 +66,7 @@ const Signin = () => {
                     <input type="password" name="password" placeholder='********' required="required" />
                     <a href="/">Forgot password?</a>
 
-                    <input type="submit" onSubmit={onSubmitHandle} value="Sign In" />
+                    <input type="submit" onClick={onSubmitHandle} value="Sign In" />
                 </form>
                 <p>Don't have an account?<a href="/">Register here</a></p>
             </div>
