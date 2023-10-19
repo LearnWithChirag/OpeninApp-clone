@@ -33,10 +33,10 @@ const Signin = () => {
                 <div className="empty"></div>
                 <div className="title">Board.</div>
                 <div className="icons">
-                    <img src={github} alt="icon-social"/>
-                    <img src={linkedin} alt="icon-social"/>
-                    <img src={twitter} alt="icon-social"/>
-                    <img src={discord} alt="icon-social"/>
+                    <a href="https://github.com/LearnWithChirag" target='_blank'><img src={github} alt="icon-social"/></a>
+                    <a href="https://www.linkedin.com/in/chirag-paliwal-aa5232257/" target='_blank'><img src={linkedin} alt="icon-social"/></a>
+                    <a href="" target='_blank'><img src={twitter} alt="icon-social"/></a>
+                    <a href="" target='_blank'><img src={discord} alt="icon-social"/></a>
 
                 </div>
             </div>
